@@ -8,7 +8,9 @@ class CocktailsController < ApplicationController
     end
 
     def show
+        # raise
         @cocktail = Cocktail.find(params['id'])
+
     end
 
     def create
@@ -17,5 +19,5 @@ class CocktailsController < ApplicationController
 
 
     # We've abstracted away all this code with our before action above, the method is a private method only accessible by our controller
-    def show; end
+    # def show; end
 end
